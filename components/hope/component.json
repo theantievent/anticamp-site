@@ -1,0 +1,26 @@
+{
+  "name": "hope",
+  "description": "Native implementation of CommonJS Promises/A",
+  "version": "1.0.0",
+  "homepage": "https://github.com/soyjavi/hope",
+  "author": {
+    "name": "Javi Jiménez Villar"
+  },
+  "keywords": [
+    "promise",
+    "javascript",
+    "commonjs"
+  ],
+  "license": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "gitHead": "70f5bf50b11823a8446d824428f50a94efa0ed49",
+  "_id": "hope@1.0.0",
+  "readme": "ERROR: No README.md file found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/soyjavi/bower.hope"
+  }
+}

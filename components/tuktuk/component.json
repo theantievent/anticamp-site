@@ -1,0 +1,21 @@
+{
+  "name": "tuktuk",
+  "description": "Simple (but powerful) RWD Framework",
+  "version": "0.7.5",
+  "homepage": "http://tuktuk.tapquo.com",
+  "author": {
+    "name": "Javi Jimenez"
+  },
+  "license": [
+    {
+      "type": "GPLv3"
+    }
+  ],
+  "gitHead": "82e8beb057750763b32fa88679981698a439a9f7",
+  "_id": "Tuktuk@0.7.5",
+  "readme": "ERROR: No README.md file found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/soyjavi/package-tuktuk.git"
+  }
+}

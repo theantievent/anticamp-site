@@ -1,0 +1,27 @@
+{
+  "name": "device.js",
+  "description": "ERROR: No README.md file found!",
+  "version": "0.0.3",
+  "homepage": "http://",
+  "author": {
+    "name": "Javi Jimenez Villar"
+  },
+  "main": [
+    "./device.js"
+  ],
+  "keywords": [
+    "mobile"
+  ],
+  "license": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "gitHead": "ac6882b331c64fb50874c8878a1428e2735d9edd",
+  "_id": "device.js@0.0.2",
+  "readme": "ERROR: No README.md file found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/soyjavi/package-device.js.git"
+  }
+}

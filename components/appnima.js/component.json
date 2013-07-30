@@ -1,0 +1,31 @@
+{
+  "name": "appnima.js",
+  "description": "JavaScript Appnima Client",
+  "version": "0.7.21",
+  "homepage": "http://appnima.com",
+  "author": {
+    "name": "Tapquo S.L.",
+    "url": "@tapquo"
+  },
+  "main": [
+    "appnima.js"
+  ],
+  "keywords": [
+    "appnima",
+    "client",
+    "javascript",
+    "LAAS"
+  ],
+  "license": [
+    {
+      "type": "GPLv3"
+    }
+  ],
+  "gitHead": "859f44895acfb576ae9bef51aba9b4969c72b65e",
+  "_id": "Appnima@0.7.21",
+  "readme": "ERROR: No README.md file found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tapquo/appnima.js"
+  }
+}

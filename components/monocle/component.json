@@ -1,0 +1,35 @@
+{
+  "name": "monocle",
+  "description": "Build awesome CoffeeScript MVC Apps",
+  "version": "1.0.3",
+  "homepage": "http://monocle.tapquo.com",
+  "author": {
+    "name": "Javi Jiménez Villar"
+  },
+  "main": [
+    "./monocle.js"
+  ],
+  "keywords": [
+    "monocle",
+    "mvc",
+    "framework",
+    "jquery",
+    "zepto",
+    "quojs"
+  ],
+  "dependencies": {
+    "quojs": "latest"
+  },
+  "license": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "gitHead": "97cf4fed5326feff6affe8adb0ce59d5b2942bc7",
+  "_id": "monocle@1.0.3",
+  "readme": "ERROR: No README.md file found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/soyjavi/package-monocle.git"
+  }
+}
