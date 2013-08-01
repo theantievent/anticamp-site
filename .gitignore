@@ -2,6 +2,7 @@ build
 node_modules
 package/javascripts
 package/stylesheets
+package/index.html
 .sass-cache
 
 Thumbs.db
