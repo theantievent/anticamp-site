@@ -32,6 +32,7 @@ module.exports = (grunt) ->
       js: [
         "components/jquery/jquery.js",
         "components/jquery.stellar/jquery.stellar.min.js",
+        "components/sidr/jquery.sidr.min.js",
         "components/monocle/monocle.js",
         "components/appnima.js/appnima.js",
         "components/hope/hope.js",
