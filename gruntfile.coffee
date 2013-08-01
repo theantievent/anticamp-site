@@ -24,6 +24,8 @@ module.exports = (grunt) ->
       sass_files: [
         "src/stylesheets/sass/*.scss"]
       jade: [
+        "src/jades/base.jade"]
+      jade_files: [
         "src/jades/*.jade"]
 
     components:
@@ -72,7 +74,7 @@ module.exports = (grunt) ->
         files: ["<%= source.sass_files %>"]
         tasks: ["sass"]
       jade:
-        files: ["<%= source.jade %>"]
+        files: ["<%= source.jade_files %>"]
         tasks: ["jade"]
       components:
         files: ["<%= components.js %>", "<%= components.css %>"]
