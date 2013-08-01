@@ -21,6 +21,8 @@ module.exports = (grunt) ->
         "src/controllers/*.coffee"]
       sass: [
         "src/stylesheets/site.*.scss"]
+      sass_files: [
+        "src/stylesheets/sass/*.scss"]
       jade: [
         "src/jades/*.jade"]
 
@@ -66,7 +68,7 @@ module.exports = (grunt) ->
         files: ["<%= source.coffee %>"]
         tasks: ["coffee", "uglify"]
       sass:
-        files: ["<%= source.sass %>"]
+        files: ["<%= source.sass_files %>"]
         tasks: ["sass"]
       jade:
         files: ["<%= source.jade %>"]
