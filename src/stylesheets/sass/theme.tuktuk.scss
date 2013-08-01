@@ -241,3 +241,11 @@ a{color:$color;}
     }
     .border{border:3px dashed $bck_light;}
     .border-top{border-top:3px dashed $bck_light; }
+    .bilbao_bg{
+      background:  url(../images/ciudad_bg.jpg) 0 0 no-repeat;
+      background-size:100%;
+      min-height: 600px;
+    }
+    .where{
+      min-height: 600px;
+    }
