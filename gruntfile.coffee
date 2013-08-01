@@ -40,6 +40,7 @@ module.exports = (grunt) ->
         "components/tuktuk/tuktuk.js"]
       css: [
         # "components/tuktuk/tuktuk.css",
+         "components/sidr/stylesheets/jquery.sidr.light.css",
         "components/tuktuk/tuktuk.icons.css"]
 
     # =========================================================================
