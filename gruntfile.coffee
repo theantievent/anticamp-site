@@ -20,8 +20,9 @@ module.exports = (grunt) ->
         "src/views/*.coffee",
         "src/controllers/*.coffee"]
       stylus: [
-        "src/stylesheets/site.*.styl"
-      ]
+        "src/stylesheets/site.*.styl"]
+      sass: [
+        "src/stylesheets/site.*.scss"]
       jade: [
         "src/jades/*.jade"]
 
@@ -45,10 +46,16 @@ module.exports = (grunt) ->
       options: compress: false, banner: "<%= meta.banner %>"
       core: files: "<%=meta.package%>/javascripts/<%=pkg.name%>.<%=pkg.version%>.js": "build/<%=pkg.name%>.<%=pkg.version%>.debug.js"
 
-    stylus:
-      theme:
-        options: compress: false, import: ["__init"]
-        files: "<%=meta.package%>/stylesheets/<%=pkg.name%>.<%=pkg.version%>.css": '<%=source.stylus%>'
+    sass:
+      dist:
+        options: style: "expanded"
+        files:
+          "<%=meta.package%>/stylesheets/<%=pkg.name%>.<%=pkg.version%>.css": "<%=source.sass%>"
+
+    jade:
+      compile:
+        options: data: debug: true
+        files:   "<%=meta.package%>/index.html": "<%= source.jade %>"
 
     concat:
       js:
@@ -56,18 +63,13 @@ module.exports = (grunt) ->
       css:
         src: "<%= components.css %>", dest: "<%=meta.package%>/stylesheets/<%=pkg.name%>.components.css"
 
-    jade:
-      compile:
-        options: data: debug: true
-        files:   "<%=meta.package%>/index.html": "<%= source.jade %>"
-
     watch:
       coffee:
         files: ["<%= source.coffee %>"]
         tasks: ["coffee", "uglify"]
-      stylus:
-        files: ["<%= source.stylus %>"]
-        tasks: ["stylus"]
+      sass:
+        files: ["<%= source.sass %>"]
+        tasks: ["sass"]
       jade:
         files: ["<%= source.jade %>"]
         tasks: ["jade"]
@@ -75,12 +77,11 @@ module.exports = (grunt) ->
         files: ["<%= components.js %>", "<%= components.css %>"]
         tasks: ["concat"]
 
-
   grunt.loadNpmTasks "grunt-contrib-coffee"
-  grunt.loadNpmTasks "grunt-contrib-stylus"
-  grunt.loadNpmTasks "grunt-contrib-jade"
   grunt.loadNpmTasks "grunt-contrib-uglify"
+  grunt.loadNpmTasks "grunt-contrib-sass"
+  grunt.loadNpmTasks "grunt-contrib-jade"
   grunt.loadNpmTasks "grunt-contrib-concat"
   grunt.loadNpmTasks "grunt-contrib-watch"
 
-  grunt.registerTask "default", [ "concat", "coffee", "uglify", "stylus", "jade"]
+  grunt.registerTask "default", [ "concat", "coffee", "uglify", "sass", "jade"]
