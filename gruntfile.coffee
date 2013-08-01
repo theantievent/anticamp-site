@@ -19,8 +19,6 @@ module.exports = (grunt) ->
         "src/models/*.coffee",
         "src/views/*.coffee",
         "src/controllers/*.coffee"]
-      stylus: [
-        "src/stylesheets/site.*.styl"]
       sass: [
         "src/stylesheets/site.*.scss"]
       jade: [
@@ -35,8 +33,8 @@ module.exports = (grunt) ->
         "components/device.js/device.js",
         "components/tuktuk/tuktuk.js"]
       css: [
-        "components/tuktuk/tuktuk.css",
-        "components/tuktuk/tuktuk.icon.css"]
+        # "components/tuktuk/tuktuk.css",
+        "components/tuktuk/tuktuk.icons.css"]
 
     # =========================================================================
     coffee:
