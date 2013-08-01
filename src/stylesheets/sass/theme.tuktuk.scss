@@ -177,6 +177,7 @@ a{color:$color;}
       position: relative;
       width: 279px;
       height: 57px;
+      margin-left: 60px;
       span{
         position: absolute;
         text-indent: -9999px;
@@ -248,4 +249,33 @@ a{color:$color;}
     }
     .where{
       min-height: 600px;
+    }
+    section.main{
+      position: relative;
+    }
+    a .icon.menu{
+      color: $bck_lightest;
+      position: fixed;
+      /*left: 20px;
+      top: 20px;*/
+      z-index: 2;
+      margin-top: 10px;
+    }
+    .sidr{
+      text-align: left;
+      font-size: .7em;
+      a{
+        display: block;
+
+        .icon.menu{
+        color: $color;
+        position: relative;
+       /* position: fixed;
+        right: 10px;
+        top: 10px;*/
+        width: 30px;
+        height: 30px;
+        z-index: 2;
+         }
+      }
     }
