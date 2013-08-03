@@ -195,14 +195,36 @@ a{color:$color;}
     .icon{
       font-size: 2.5em;
     }
-    .circle.column_3{
+   /* .circle.column_3{
       border-radius:50%;
       height: 260px;
       text-align: center;
       padding: 5%;
       line-height: 1.1em;
-    }
-      .circle.column_4{
+    }*/
+     .circle{
+      border-radius:50%;
+      text-align: center;
+      padding: 15% 5%;
+      line-height: 1.1em;
+      font-size: 1.1em; 
+      position: relative;
+      overflow: visible; 
+      margin: auto;
+      &.dia260{
+        width: 260px;
+        height: 260px;
+        }
+      &.dia200{
+        width: 200px;
+        height: 200px;
+        }
+      &.dia300{
+        width: 300px;
+        height: 300px;
+        }
+      }
+      .circle.column_4.melopido{
       border-radius:50%;
       height: 360px;
       margin: 40px; 
@@ -338,4 +360,15 @@ section{
 .pos7{left: 50%; top: 50%; }
 .pos8{left: 70%; top: 70%; }
 
+/*who*/
+.javi{
+  background:  url(../images/javi.jpg) 0 0 no-repeat;
+  height: 100px;
+  background-size:cover;
+   }
+.nak{
+  background:  url(../images/nak.jpg) 0 0 no-repeat; 
+  height: 100px;
+  background-size:cover;
+  }
 
