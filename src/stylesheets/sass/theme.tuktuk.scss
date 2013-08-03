@@ -178,6 +178,7 @@ a{color:$color;}
       width: 279px;
       height: 57px;
       margin-left: 60px;
+      margin-top: 30px;
       span{
         position: absolute;
         text-indent: -9999px;
@@ -213,12 +214,16 @@ a{color:$color;}
       overflow: visible; 
         &:hover{
         background: rgba(255,255,255,.3); 
-
         -webkit-transition-duration: .5s;
         -moz-transition-duration: .5s;
         -ms-transition-duration: .5s;
         -o-transition-duration: .5s;
         transition-duration: .5s;
+          -webkit-transform: rotate(-15deg);
+          -moz-transform: rotate(-15deg);
+          -ms-transform: rotate(-15deg);
+          -o-transform: rotate(-15deg);
+          transform: rotate(-15deg);
         &:before{
           content:"Me lo pido";
           position: absolute;
@@ -279,3 +284,58 @@ a{color:$color;}
          }
       }
     }
+    .menu li{float: left;
+      a{
+        color: $bck_lightest;
+        }}
+
+    .heading{font-family: 'Love Ya Like A Sister', cursive; }
+
+section{
+  position: relative;
+}
+.main.landing .heading{
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+.stella{
+  position: absolute;
+  bottom: 100px;
+  left: 0%;
+  &.top{
+    top: 0;
+    bottom: inherit;
+  }
+  &.left{
+    left: 13%;
+  }
+
+}
+.space{
+    height: 500px;
+    position: relative;
+  }
+.coffee_angels{
+  height: 500px;
+  margin-top: 200px;
+   }
+ ul.angels li{ 
+  width: 260px;
+  height: 260px;
+  float: left;
+  list-style: none;
+  padding-top: 110px;
+  position: absolute;
+  color: $color_secondary;
+  /*font-family: 'Love Ya Like A Sister', cursive;*/
+  background:url(../images/coffeeli.png) 0 0 no-repeat; 
+}
+.pos1{left:   0; top: 0%; }
+.pos2{left: 10%; top: 10% ; }
+.pos3{left: 40%; top: 40%; }
+.pos4{left: 60%; top: 60%; }
+.pos5{left: 80%; top: 80%; }
+.pos6{left: 20%; top: 20%; }
+.pos7{left: 50%; top: 50%; }
+.pos8{left: 70%; top: 70%; }
+
+

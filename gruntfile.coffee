@@ -34,14 +34,17 @@ module.exports = (grunt) ->
         "components/jquery.stellar/jquery.stellar.min.js",
         #"components/sidr/jquery.sidr.min.js",
         #"components/smooth-scroll/jquery.smooth-scroll.min.js",
+        "components/iscroll/dist/iscroll-lite-min.js", 
         "components/monocle/monocle.js",
+        #"components/meby/js/meny.min.js",
         "components/appnima.js/appnima.js",
         "components/hope/hope.js",
         "components/device.js/device.js",
         "components/tuktuk/tuktuk.js"]
       css: [
         # "components/tuktuk/tuktuk.css",
-         "components/sidr/stylesheets/jquery.sidr.light.css",
+        # "components/meny/css/demo.css",
+        # "components/sidr/stylesheets/jquery.sidr.light.css",
         "components/tuktuk/tuktuk.icons.css"]
 
     # =========================================================================
