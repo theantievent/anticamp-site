@@ -210,20 +210,20 @@ a{color:$color;}
       font-size: 1.1em; 
       position: relative;
       overflow: visible; 
-      margin: auto;
-      &.dia260{
+      margin: auto;}
+      .dia260{
         width: 260px;
         height: 260px;
         }
-      &.dia200{
+      .dia200{
         width: 200px;
         height: 200px;
         }
-      &.dia300{
+      .dia300{
         width: 300px;
         height: 300px;
         }
-      }
+      
       .circle.column_4.melopido{
       border-radius:50%;
       height: 360px;
@@ -367,16 +367,60 @@ section{
 /*who*/
 .javi{
   background:  url(../images/javi.jpg) 0 0 no-repeat;
-  height: 100px;
   background-size:cover;
    }
 .nak{
   background:  url(../images/nak.jpg) 0 0 no-repeat; 
-  height: 100px;
   background-size:cover;
   }
-.camiseta1{
-width: 50px;
-height: 50px;
-background:  url(../images/tshirt.png) 0 0 no-repeat;
-}
+#merchandaising{
+  height: 600px;
+}  
+.mer1{background:  url(../images/mer1.png) 0 0 no-repeat;background-size:content;left: 0;
+  &:hover:before{
+    content:"girl/black";
+    position: absolute;
+    bottom: -30px;
+    left: 35%;
+    cursor: help;
+    font-weight: bold;
+    } 
+  }
+.mer2{background:  url(../images/mer2.png) 0 0 no-repeat;background-size:content;left: 20%; 
+&:hover:before{
+    content:"boy/black";
+    position: absolute;
+    bottom: -30px;
+    left: 40%;
+    cursor: help;
+    font-weight: bold;
+    } }
+.mer3{background:  url(../images/mer3.png) 0 0 no-repeat;background-size:content;right: 0; 
+&:hover:before{
+    content:"girl/anticolor";
+    position: absolute;
+    bottom: -30px;
+    left: 33%;
+    cursor: help;
+    font-weight: bold;
+    } }
+.mer4{background:  url(../images/mer4.png) 0 0 no-repeat;background-size:content;right: 20%; 
+&:hover:before{
+    content:"boy/anticolor";
+    position: absolute;
+    bottom: -30px;
+    left: 32%;
+    cursor: help;
+    font-weight: bold;
+    } }
+.mer5{background:  url(../images/mer5.png) 0 0 no-repeat;background-size:content; }
+.mer6{background:  url(../images/mer6.png) 0 0 no-repeat;background-size:content;left: 40%;
+&:hover:before{
+    content:"sticker";
+    position: absolute;
+    bottom: 30px;
+    left: 30%;
+    cursor: help;
+    font-weight: bold;
+    }  }
+.mer1,.mer2,.mer3,.mer4,.mer5,.mer6{position: absolute;}
