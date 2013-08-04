@@ -4,7 +4,7 @@
 /* ========================= VISIBILITY ========================= */
 // show options
 @mixin values_show($_values, $width:960px){
-  // default case 960px 
+  // default case 960px
   @if $width == $normal{
     @if       $_values == phone{display: none !important;}
     @else if  $_values == tablet{display: none !important;}
@@ -14,7 +14,7 @@
     @else if  $_values == tablet{display: none !important;}
     @else     {display: inherit;}}
   // between 768px and 959px
-  @else if $width == $media_two{ 
+  @else if $width == $media_two{
     @if       $_values == phone{display: none !important;}
     @else if  $_values == tablet{display: inherit !important;}
     @else     {display: none !important;}}
@@ -136,8 +136,8 @@
     @else if $_values == _6{width: 560px;}
     @else if $_values == _7{width: 660px;}
     @else if $_values == _8{width: 760px;}
-    @else if $_values == _9{width: 860px;} 
-    @else if $_values == _10{width: 1000px;}
+    @else if $_values == _9{width: 860px;}
+    @else if $_values == _10{width: 960px;}
     @else if $_values == _11{width: 1060px;}
     @else {width: 1160px;}}
   // between 768px and 959px
@@ -181,7 +181,7 @@
     @else if $_values == _6{margin-left: 620px;}   
     @else if $_values == _7{margin-left: 720px;}   
     @else if $_values == _8{margin-left: 820px;}   
-    @else if $_values == _9{margin-left: 980px;}  
+    @else if $_values == _9{margin-left: 920px;}  
     @else if $_values == _10{margin-left: 1020px;}   
     @else {margin-left: 1120px;}}
   // between 768px and 959px
@@ -209,11 +209,11 @@
 @each $values in _1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11{.offset#{$values}{@include values_offset($values, $normal);}}
 @each $values in phone, tablet, screen{
   .show-#{$values} {@include values_show($values, $normal);}
-	.hide-#{$values} {@include values_hide($values, $normal);}}
+  .hide-#{$values} {@include values_hide($values, $normal);}}
 /* ========================= MEDIA QUERY ========================= */
 // more of 1200px
 @media only screen and (min-width: $media_one){
-	@include row(0,$media_one);
+  @include row(0,$media_one);
   @include class_column($media_one);
   @each $values in _1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12{.column#{$values}{@include values_column($values, $media_one);}}
   @each $values in _1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11{.offset#{$values}{@include values_offset($values, $media_one);}}
