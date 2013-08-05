@@ -1,5 +1,6 @@
 build
 node_modules
+npm-debug.log
 package/javascripts
 package/stylesheets
 package/index.html

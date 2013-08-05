@@ -1,0 +1,7 @@
+server:
+    host: localhost
+    port: 1337
+
+files:
+    - www/public
+    - www/index

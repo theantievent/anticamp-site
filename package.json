@@ -1,11 +1,21 @@
 {
   "name"                    : "anticamp-site",
-  "version"                 : "0.0.1",
+  "version"                 : "0.1.0",
   "description"             : "Flip your mind and change your knowledge.",
   "homepage"                : "http://anticamp.org",
   "author": {
     "name"                  : "Nextflip Coop.",
     "site"                  : "http://nextflip.org"},
+  "dependencies": {
+    "restify"               : "*",
+    "coffee-script"         : "*",
+    "cron"                  : "*",
+    "jade"                  : "*",
+    "async"                 : "*",
+    "mongoose"              : "*",
+    "redis"                 : "*",
+    "js-yaml"               : "*"
+  },
   "devDependencies": {
     "grunt-contrib-coffee"  : "*",
     "grunt-contrib-stylus"  : "*",
@@ -15,5 +25,11 @@
     "grunt-contrib-uglify"  : "*",
     "grunt-contrib-copy"    : "*",
     "grunt-contrib-watch"   : "*"
+  },
+  "scripts": {
+    "lines": "find server.js api -name \"*.js\" -print0 | wc -l --files0-from=-"
+  },
+  "engines": {
+    "node": "*"
   }
 }
